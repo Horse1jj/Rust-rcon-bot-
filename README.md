@@ -33,13 +33,13 @@ This is a Discord bot designed to manage Rust community servers using RCON comma
    git clone https://github.com/yourusername/discord-rust-bot.git
    cd discord-rust-bot
    
-**Create a virtual environment (optional but recommended)**:
+## Create a virtual environment (optional but recommended)
 
 
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
-**Install required packages: Install the necessary Python packages using pip**:
+## Install required packages: Install the necessary Python packages using pip
 
 
 `pip install discord.py`
@@ -47,7 +47,7 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 **Make sure to install any other packages you might need based on your project’s requirements.
 Configuration**
 
-Create a config.json file in the root directory:
+## Create a config.json file in the root directory:
 `
 {
     "token": "YOUR_BOT_TOKEN_HERE",
@@ -60,7 +60,7 @@ Create a config.json file in the root directory:
 
 Replace "YOUR_BOT_TOKEN_HERE" with your actual Discord bot token.
 
-**Set up roles.json to define admin and mod roles by their IDs**:
+## Set up roles.json to define admin and mod roles by their IDs 
 
 
 `
@@ -70,7 +70,7 @@ Replace "YOUR_BOT_TOKEN_HERE" with your actual Discord bot token.
 }
 `
 
-**Set up servers.json to define your Rust servers**:
+## Set up servers.json to define your Rust servers
 
 
 `
@@ -95,9 +95,7 @@ Invite the bot: Make sure to invite your bot to your Discord server with the nec
 Interact with the bot: Use the configured command prefix (default is !) followed by commands to interact with the bot. For example, to ban a player, you can use: #
 
 
-## command FAQ
-
-## Command List
+## Command List/FAQ
 
 ### Admin Commands
 - `!ban <username> <server>`  
@@ -162,7 +160,4 @@ Interact with the bot: Use the configured command prefix (default is !) followed
   Displays a list of all available commands along with their descriptions.  
   **Example**: `!help`
 
-## Usage Examples
-
-- To ban a player named `q-player` from `rust1`:
 
