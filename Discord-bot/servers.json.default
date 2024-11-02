@@ -1,0 +1,15 @@
+{
+    "rust1": {
+        "ip": "YOUR_SERVER_IP",
+        "port": "YOUR_SERVER_PORT",
+        "rcon_password": "YOUR_RCON_PASSWORD"
+    },
+    "rust2": {
+        "ip": "YOUR_SECOND_SERVER_IP",
+        "port": "YOUR_SECOND_SERVER_PORT",
+        "rcon_password": "YOUR_SECOND_RCON_PASSWORD"
+    }
+}
+
+
+\\ add more as needed 
