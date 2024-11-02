@@ -94,3 +94,75 @@ Invite the bot: Make sure to invite your bot to your Discord server with the nec
 
 Interact with the bot: Use the configured command prefix (default is !) followed by commands to interact with the bot. For example, to ban a player, you can use: #
 
+
+## command FAQ
+
+## Command List
+
+### Admin Commands
+- `!ban <username> <server>`  
+  Bans a player from the specified server.  
+  **Example**: `!ban q-player rust1`
+
+- `!kick <username> <server>`  
+  Kicks a player from the specified server.  
+  **Example**: `!kick q-player rust1`
+
+- `!mute <username> <server>`  
+  Mutes a player in-game, disabling their chat capabilities.  
+  **Example**: `!mute q-player rust1`
+
+- `!unmute <username> <server>`  
+  Unmutes a previously muted player, allowing them to chat again.  
+  **Example**: `!unmute q-player rust1`
+
+- `!giveitem <player_name> <item_name> <server>`  
+  Gives a specified item to a player on the specified server.  
+  **Example**: `!giveitem q-player "Wooden Bow" rust1`
+
+- `!quit`  
+  Saves everything and stops the server.  
+  **Example**: `!quit`
+
+- `!weather.fog`  
+  Sets the fog weather on the server.  
+  **Example**: `!weather.fog`
+
+- `!weather.wind`  
+  Sets the wind weather on the server.  
+  **Example**: `!weather.wind`
+
+- `!weather.rain <value>`  
+  Sets the rain weather on the server to the specified value.  
+  **Example**: `!weather.rain 0.5`
+
+### Mod Commands
+- `!mute <username> <server>`  
+  Mutes a player in-game chat, preventing them from speaking.  
+  **Example**: `!mute q-player rust1`
+
+- `!unmute <username> <server>`  
+  Unmutes a player in-game chat, allowing them to speak again.  
+  **Example**: `!unmute q-player rust1`
+
+### General Commands
+- `!players <server>`  
+  Displays the current players on the specified server.  
+  **Example**: `!players rust1`
+
+- `!servers`  
+  Lists all available servers that the bot can manage.  
+  **Example**: `!servers`
+
+- `!serverinfo <server>`  
+  Displays information about the specified server.  
+  **Example**: `!serverinfo rust1`
+
+- `!help`  
+  Displays a list of all available commands along with their descriptions.  
+  **Example**: `!help`
+
+## Usage Examples
+
+- To ban a player named `q-player` from `rust1`:
+
