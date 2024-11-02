@@ -1,0 +1,4 @@
+{
+    "admin": ["ROLE_ID_1", "ROLE_ID_2"],  // Replace with actual role IDs
+    "mod": ["ROLE_ID_3", "ROLE_ID_4"]     // Replace with actual role IDs
+}
