@@ -29,7 +29,7 @@ This is a Discord bot designed to manage Rust community servers using RCON comma
 1. **Clone the repository**:
 
 ```bash
-https://github.com/Horse1jj/Rust-rcon-bot-
+git clone https://github.com/Horse1jj/Rust-rcon-bot-
 
    cd discord-rust-bot
 
