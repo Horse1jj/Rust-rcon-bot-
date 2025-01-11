@@ -1,7 +1,5 @@
 # Rust-rcon-bot-
 
-# Discord Rust Server Management Bot
-
 This is a Discord bot designed to manage Rust community servers using RCON commands. It allows users with appropriate roles to execute various server commands directly from Discord.
 
 ## Table of Contents
@@ -29,9 +27,13 @@ This is a Discord bot designed to manage Rust community servers using RCON comma
 ## Installation
 
 1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/yourusername/discord-rust-bot.git
+
+```bash
+https://github.com/Horse1jj/Rust-rcon-bot-
+
    cd discord-rust-bot
+
+```
    
 ## Create a virtual environment (optional but recommended)
 
