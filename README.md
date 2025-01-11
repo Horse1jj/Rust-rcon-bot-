@@ -41,8 +41,7 @@ git clone https://github.com/Horse1jj/Rust-rcon-bot-
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
-## Install required packages: Install the necessary Python packages using pip
-
+## Install required packages: 
 
 `pip install discord.py`
 
