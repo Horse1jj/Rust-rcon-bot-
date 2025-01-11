@@ -45,36 +45,36 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 `pip install discord.py`
 
-**Make sure to install any other packages you might need based on your project’s requirements.
-Configuration**
 
 ## Create a config.json file in the root directory:
-`
+
+``` 
 {
     "token": "YOUR_BOT_TOKEN_HERE",
     "prefix": "!",
-    "status": {
-        "activity": "Playing Rust"
-    }
+  
+   
 }
-` 
+``` 
 
 Replace "YOUR_BOT_TOKEN_HERE" with your actual Discord bot token.
 
 ## Set up roles.json to define admin and mod roles by their IDs 
 
 
-`
+```
+
 {
     "admin": ["ROLE_ID_1", "ROLE_ID_2"],
     "mod": ["ROLE_ID_3", "ROLE_ID_4"]
 }
-`
+
+```
 
 ## Set up servers.json to define your Rust servers
 
 
-`
+```
 {
     "rust1": {
         "ip": "YOUR_SERVER_IP",
@@ -82,7 +82,8 @@ Replace "YOUR_BOT_TOKEN_HERE" with your actual Discord bot token.
         "rcon_password": "YOUR_RCON_PASSWORD"
     }
 }
-`
+
+```
 
 ## Usage
 
