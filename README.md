@@ -43,7 +43,7 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 ## Install required packages: 
 
-`pip install discord.py`
+`pip install -r requirements.txt`
 
 
 ## Create a config.json file in the root directory:
