@@ -29,9 +29,7 @@ This is a Discord bot designed to manage Rust community servers using RCON comma
 
 ```bash
 git clone https://github.com/Horse1jj/Rust-rcon-bot-
-
-   cd discord-rust-bot
-
+cd Rust-rcon-bot-
 ```
    
 ## Create a virtual environment (optional but recommended)
@@ -44,16 +42,14 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 `pip install -r requirements.txt`
 
-
 ## Create a config.json file in the root directory:
 
-``` 
+``` json
 {
     "token": "YOUR_BOT_TOKEN_HERE",
     "prefix": "!",
-  
-   
 }
+
 ``` 
 
 Replace "YOUR_BOT_TOKEN_HERE" with your actual Discord bot token.
@@ -61,7 +57,7 @@ Replace "YOUR_BOT_TOKEN_HERE" with your actual Discord bot token.
 ## Set up roles.json to define admin and mod roles by their IDs 
 
 
-```
+```json
 
 {
     "admin": ["ROLE_ID_1", "ROLE_ID_2"],
@@ -73,7 +69,7 @@ Replace "YOUR_BOT_TOKEN_HERE" with your actual Discord bot token.
 ## Set up servers.json to define your Rust servers
 
 
-```
+```json
 {
     "rust1": {
         "ip": "YOUR_SERVER_IP",
