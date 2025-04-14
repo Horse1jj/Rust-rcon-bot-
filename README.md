@@ -21,7 +21,6 @@ This is a Discord bot designed to manage Rust community servers using RCON comma
 ## Requirements
 
 - Python 3.8 or higher
-- `discord.py` library
 - Any additional libraries specified in the installation section
 
 ## Installation
