@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 import json
-from utils.rcon_utils import execute_rcon_command  
+from utils.rust import execute_rcon_command  
 
 class GeneralCommands(commands.Cog):
     def __init__(self, bot):

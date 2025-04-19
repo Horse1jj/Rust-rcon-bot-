@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-from utils.embed_utils import create_embed
+from utils.embed import create_embed
 
 class Help(commands.Cog):
     def __init__(self, bot):

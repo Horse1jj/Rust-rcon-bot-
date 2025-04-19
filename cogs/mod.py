@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
-from utils.rcon_utils import execute_rcon_command
-from utils.embed_utils import create_embed
+from utils.rust import execute_rcon_command
+from utils.embed import create_embed
 import json
 
 # Load server and role configurations
