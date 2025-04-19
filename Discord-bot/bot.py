@@ -39,6 +39,6 @@ class RustRconBot(commands.Bot):
             activity = discord.Game(name=status.get("activity", "Default activity"))
             await self.change_presence(activity=activity)
 
-bot = MyBot()
+bot = RustRconBot()
 
 bot.run(config["token"])
