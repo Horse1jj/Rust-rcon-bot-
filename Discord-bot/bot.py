@@ -1,45 +1,44 @@
 import discord
 from discord.ext import commands
+from discord import app_commands
 import json
 import os
 
-# Load configuration settings
+# Load configuration
 with open("config.json") as config_file:
     config = json.load(config_file)
 
-# Set up intents (required for certain events)
+GUILD_ID = config.get("guild_id")  # Make sure it's an integer in your config
+
+
 intents = discord.Intents.default()
-intents.members = True  
 intents.message_content = True
+intents.members = True
 
-# Create bot instance with command prefix
-bot = commands.Bot(command_prefix=config.get("prefix"), intents=intents)
 
-# Load all cogs
-for filename in os.listdir("./cogs"):
-    if filename.endswith(".py"):
-        bot.load_extension(f"cogs.{filename[:-3]}")
+class RustRconBot(commands.Bot):
+    def __init__(self):
+        super().__init__(command_prefix=config.get("prefix"), intents=intents)
+        self.guild = discord.Object(id=GUILD_ID)  
 
-# Event to indicate bot is ready
-@bot.event
-async def on_ready():
-    print(f'Logged in as {bot.user.name} ({bot.user.id})')
-    print('------')
-    
-    # Optionally set bot status
-    with open("status.json") as status_file:
-        status = json.load(status_file)
-        activity = discord.Game(name=status.get("activity", "Default activity"))
-        await bot.change_presence(activity=activity)
+    async def setup_hook(self):
+        # Load all cogs
+        for filename in os.listdir("./cogs"):
+            if filename.endswith(".py"):
+                await self.load_extension(f"cogs.{filename[:-3]}")
+        
 
-# Error handling for command errors
-@bot.event
-async def on_command_error(ctx, error):
-    if isinstance(error, commands.CommandNotFound):
-        await ctx.send("That command does not exist. Type `{config.prefix}help` for a list of commands.")
-    else:
-        await ctx.send(f"An error occurred: {error}")
+        await self.tree.sync(guild=self.guild)
 
-# Run the bot
+    async def on_ready(self):
+        print(f'Logged in as {self.user.name} ({self.user.id})')
+        print('------')
+
+        with open("status.json") as status_file:
+            status = json.load(status_file)
+            activity = discord.Game(name=status.get("activity", "Default activity"))
+            await self.change_presence(activity=activity)
+
+bot = MyBot()
+
 bot.run(config["token"])
-
